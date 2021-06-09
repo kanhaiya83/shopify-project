@@ -1,0 +1,228 @@
+:root {
+  --backgroundColor: #ededed;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--backgroundColor);
+  font-family: "Montserrat";
+}
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 20vh;
+  background-color: #ededed;
+  border-bottom: 1px solid grey;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.logo span {
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+.logo i {
+  color: #2d8e17;
+  padding: 0 0.4vw 0 0;
+  font-size: 1.25rem;
+}
+
+.navbar {
+  display: flex;
+  margin-left: 10vw;
+  height: 8vh;
+  height: inherit;
+}
+.navbar .nav-item {
+  width: 100%;
+  margin: 0 2.5vw 0 0;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #535353;
+}
+.navbar .nav-item span {
+  color: "#535353";
+}
+.navbar .nav-item .line {
+  width: 0;
+  margin-top: 0;
+  height: 0.1rem;
+  background-color: #757575;
+  transition: width 150ms;
+}
+
+.nav-item:hover .line {
+  opacity: 1;
+  width: inherit;
+}
+
+.cart {
+  float: right;
+  background-color: var(--backgroundColor);
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+.cart i div {
+  background-color: #ff4b4b;
+  height: 0.6rem;
+  width: 0.6rem;
+  padding: 0.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  font-size: 0.6rem;
+  font-weight: bolder;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.image-with-text-container {
+  margin-bottom: 50vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.right-side-image-container {
+  height: 100vh;
+  width: 43vw;
+  position: absolute;
+  top: 0;
+  right: 5rem;
+}
+.right-side-image-container .right-side-image {
+  height: inherit;
+  width: inherit;
+}
+
+.left-side-text {
+  display: flex;
+  flex-direction: column;
+  margin: 10vh 0 0 0;
+}
+.left-side-text .green {
+  color: #6daf70;
+  font-weight: 900;
+  font-size: 0.75rem;
+  letter-spacing: -0.03rem;
+}
+.left-side-text .bold {
+  font-weight: 900;
+  font-size: 2.3rem;
+  letter-spacing: 0.25rem;
+}
+.left-side-text .small {
+  font-size: 0.9rem;
+  margin: 1vh 0 0 0;
+}
+.left-side-text .catalogBtn {
+  height: 2rem;
+  width: 7rem;
+  border-radius: 50rem;
+  border: 0.15rem solid #64e069;
+  margin: 3vh 0 0 0;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.07rem;
+  transition: background-color 300ms, color 300ms;
+}
+.left-side-text .catalogBtn:hover {
+  background-color: #64e069;
+  color: white;
+}
+
+.our-collections-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.our-collections-section div {
+  display: flex;
+  width: 90vw;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.our-collections-section div .collection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+.our-collections-section div .collection .collection-image-container {
+  height: 17rem;
+  width: 17rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.our-collections-section div .collection .collection-image-container.tools {
+  background-image: url("images/tools.jpg");
+}
+.our-collections-section div .collection .collection-image-container.fertilizers {
+  background-image: url("images/fertilizers.jpg");
+}
+.our-collections-section div .collection .collection-image-container.saplings {
+  background-image: url("images/saplings.jpg");
+}
+.our-collections-section div .collection .collection-image-container.seeds {
+  background-image: url("images/seeds.jpg");
+}
+
+.trending-products-section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+.trending-products-section div {
+  display: flex;
+  justify-content: space-between;
+}
+.trending-products-section div .product {
+  display: flex;
+  flex-direction: column;
+}
+.trending-products-section div .product .product-image-container {
+  height: 13rem;
+  width: 13rem;
+  background-color: lavender;
+}
+.trending-products-section div .product .product-info-container {
+  width: 13rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .image-with-text-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .right-side-image-container {
+    position: static;
+    height: 55vh;
+  }
+
+  .right-side-image {
+    width: inherit;
+    height: inherit;
+  }
+}
+
+/*# sourceMappingURL=homepage.css.map */

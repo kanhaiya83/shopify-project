@@ -1,0 +1,120 @@
+<h1>hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</h1>
+<div class="wrapper">
+    <div class="main-container">
+        <div class="main">
+            <h2>Main content</h2>
+            <p>Scroll down the page!</p>
+            <h3>How to recreate this</h3>
+            <p>
+              Position the columns with flex. Then apply two lines of CSS to the sidebar to make it sticky:
+              <pre>
+        .sidebar {
+          position: sticky;
+          top: 0;
+        }
+            </pre>
+            Include <code>position: -webkit-sticky;</code> for Safari.
+            </p>
+          </div>
+          <div class="main">
+            <h2>Main content</h2>
+            <p>Scroll down the page!</p>
+            <h3>How to recreate this</h3>
+            <p>
+              Position the columns with flex. Then apply two lines of CSS to the sidebar to make it sticky:
+              <pre>
+        .sidebar {
+          position: sticky;
+          top: 0;
+        }
+            </pre>
+            Include <code>position: -webkit-sticky;</code> for Safari.
+            </p>
+          </div>
+    </div>
+  
+    <div class="sidebar">
+      <h3>Sticky sidebar</h3>
+      <p>I will follow you!</p>
+      <p><a href="https://caniuse.com/#search=sticky">caniuse stats</a>
+    </div>
+  </div>
+  <div>
+    <h2>Main content</h2>
+      <p>Scroll down the page!</p>
+      <h3>How to recreate this</h3><h2>Main content</h2>
+      <p>Scroll down the page!</p>
+      <h3>How to recreate this</h3><h2>Main content</h2>
+      <p>Scroll down the page!</p>
+      <h3>How to recreate this</h3><h2>Main content</h2>
+      <p>Scroll down the page!</p>
+      <h3>How to recreate this</h3><h2>Main content</h2>
+      <p>Scroll down the page!</p>
+      <h3>How to recreate this</h3><h2>Main content</h2>
+      <p>Scroll down the page!</p>
+      <h3>How to recreate this</h3><h2>Main content</h2>
+      <p>Scroll down the page!</p>
+      <h3>How to recreate this</h3><h2>Main content</h2>
+      <p>Scroll down the page!</p>
+      <h3>How to recreate this</h3><h2>Main content</h2>
+      <p>Scroll down the page!</p>
+      <h3>How to recreate this</h3><h2>Main content</h2>
+      <p>Scroll down the page!</p>
+      <h3>How to recreate this</h3><h2>Main content</h2>
+      <p>Scroll down the page!</p>
+      <h3>How to recreate this</h3><h2>Main content</h2>
+      <p>Scroll down the page!</p>
+      <h3>How to recreate this</h3>
+  </div>
+
+<style>
+  .sidebar {
+  width: 50%;
+  height: 100vh;
+  min-height: 200px;
+  overflow: auto;
+  position: sticky;
+  top: 5%;
+}
+
+.main {
+  width: 40%;
+  height: 100vh;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main,
+.sidebar {
+  border: 5px solid #222;
+  background-color: white;
+  border-radius: 10px;
+  color: #222;
+  padding: 15px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+body {
+  padding: 3%;
+  background-color: #ccc;
+  font-size: 20px;
+  box-sizing: border-box;
+  font-family: Lato, sans-serif;
+}
+
+code, pre {
+  background-color: #ccc;
+  padding: 0 3px;
+  border-radius: 5px;
+}
+
+.bottom {
+  justify-self: bottom;
+}
+</style>
+ 

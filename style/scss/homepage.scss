@@ -1,0 +1,148 @@
+  :root {
+    --backgroundColor: #ededed;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: var(--backgroundColor);
+    font-family: "Montserrat";
+  }
+
+
+.image-with-text-container {
+  margin-bottom: 50vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.right-side-image-container {
+  height: 100vh;
+  width: 43vw;
+  position: absolute;
+  top: 0;
+  right: 5rem;
+
+  .right-side-image {
+    height: inherit;
+    width: inherit;
+  }
+}
+
+.left-side-text {
+  display: flex;
+  flex-direction: column;
+  margin: 10vh 0 0 0;
+
+  .green {
+    color: #6daf70;
+    font-weight: 900;
+    font-size: 0.75rem;
+    letter-spacing: -0.03rem;
+  }
+  .bold {
+    font-weight: 900;
+    font-size: 2.3rem;
+    letter-spacing: 0.25rem;
+  }
+  .small {
+    font-size: 0.9rem;
+    margin: 1vh 0 0 0;
+  }
+  .catalogBtn {
+    height: 2rem;
+    width: 7rem;
+    border-radius: 50rem;
+    border: 0.15rem solid #64e069;
+    margin: 3vh 0 0 0;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.07rem;
+    transition: background-color 300ms, color 300ms;
+  }
+  .catalogBtn:hover {
+    background-color: #64e069;
+    color: white;
+  }
+}
+
+.our-collections-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  div {
+    display: flex;
+    width: 90vw;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .collection {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+      .collection-image-container {
+        height: 17rem;
+        width: 17rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .collection-image-container.tools {
+        background-image: url("images/tools.jpg");
+      }
+      .collection-image-container.fertilizers {
+        background-image: url("images/fertilizers.jpg");
+      }
+      .collection-image-container.saplings {
+        background-image: url("images/saplings.jpg");
+      }
+      .collection-image-container.seeds {
+        background-image: url("images/seeds.jpg");
+      }
+    }
+  }
+}
+
+.trending-products-section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  div {
+    display: flex;
+    justify-content: space-between;
+    .product {
+      display: flex;
+      flex-direction: column;
+      .product-image-container {
+        height: 13rem;
+        width: 13rem;
+        background-color: lavender;
+      }
+      .product-info-container {
+        width: 13rem;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 900px) {
+    .image-with-text-container{
+      display: flex;
+      flex-direction: column;
+    }
+    .right-side-image-container{
+      position: static;
+      height: 55vh;
+    }
+    .right-side-image{
+      width: inherit;
+      height: inherit ;
+    }
+  }
