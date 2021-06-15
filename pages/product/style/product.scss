@@ -304,26 +304,28 @@ header {
           margin-bottom: 0.2rem;
           display: block;
         }
-        div {
+        form {
           width: 100%;
-
-          span {
+          margin-top: 0.5rem;
+          display: flex;
+          justify-content: space-between;
+          input {
+            width: calc(33.3333% - 10px);
+            padding: 0.4rem 0;
+            background-color: white;
+            outline: none;
             border: 1px solid black;
-            padding: 0.2rem;
-            display: inline-block;
-            width: 2rem;
-            text-align: center;
-            font-weight: 550;
-            transition: color 200ms, background-color 200ms;
-          }
-
-          span:hover {
-            color: white;
-            background-color: black;
+            font-size: 0.8rem;
+            &:hover {
+              transition: color 200ms, background-color 200zms;
+              background-color: black;
+              color: white;
+            }
           }
         }
       }
     }
+
     .button-container {
       display: flex;
       flex-direction: column;

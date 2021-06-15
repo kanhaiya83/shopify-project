@@ -2,129 +2,412 @@
 
 <html lang="en">
   <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./pages/test/flickity.css" />
+    <script src="./pages/test/flickity.pkgd.js"></script>
+    <!-- style scss file -->
     <link rel="stylesheet" href="style/scss/homepage.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
-
+    <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product page</title>
+    <title>HomePage</title>
   </head>
   <body>
-    <div class="container2">
-      <header class="header">
+    <header>
+      <div class="header-content-wrapper">
         <div class="logo">
           <i class="fa fa-leaf"></i>
           <span>NATURA</span>
         </div>
         <div class="navbar">
-          <a href="pages/product.html" class="nav-item"></a>
+          <a href="#" class="nav-item">
             <span>Home</span>
+            <div class="line"></div>
+          </a>
+
+          <a href="#" class="nav-item">
+            <span>Shop</span>
+            <div class="line"></div>
+          </a>
+          <a href="#" class="nav-item">
+            <span>Dresses</span>
+            <div class="line"></div>
+          </a>
+          <a href="#" class="nav-item">
+            <span>Blog</span>
             <div class="line"></div>
           </a>
           <a href="#" class="nav-item">
             <span>About</span>
             <div class="line"></div>
           </a>
-          <a href="#" class="nav-item">
-            <span>Contact</span>
-            <div class="line"></div>
-          </a>
         </div>
 
-        <div class="cart">
-          <i class="fa fa-shopping-cart fa-2x">
-            <div class="cart-item-count">0</div>
-          </i>
-        </div>
-      </header>
-      <!-- Image with text -->
-      <div class="image-with-text-container">
-        <div class="left-side-text">
-          <span class="green">Shop and Garden</span>
-          <span class="bold">
-            Everything Your
-            <br />
-            Gardern Needs
-          </span>
-          <span class="small">
-            Check our collection of best exotic plants
-            <br />
-            from around the world.
-          </span>
-          <button class="catalogBtn">Catalog</button>
-        </div>
-        <div class="right-side-image-container">
-          <img src="images/garden.jpg" alt="" class="right-side-image" />
-        </div>
-      </div>
-      <!-- Collection -->
-      <div class="our-collections-section">
-        <h2>Our Collections</h2>
-        <div>
-          <div class="collection">
-            <div class="collection-image-container seeds"></div>
-
-            <span>Seeds</span>
+        <div class="icons">
+          <div class="cart-icon">
+            <i class="fa fa-shopping-cart"></i>
           </div>
-          <div class="collection">
-            <div class="collection-image-container tools"></div>
-
-            <span>Tools</span>
-          </div>
-          <div class="collection">
-            <div class="collection-image-container saplings"></div>
-
-            <span>Saplings</span>
-          </div>
-          <div class="collection">
-            <div class="collection-image-container fertilizers"></div>
-            <span>Fertilizers</span>
+          <div class="search-icon">
+            <i class="fa fa-search"></i>
           </div>
         </div>
       </div>
-      <!-- Trendng Products -->
+    </header>
+    <div class="homepage-container">
+      <div class="homepage-slider-container">
+        <div class="homepage-slide">
+          <div class="slider-content">
+            <div class="content-wrapper">
+              <span class="large-font karlo-font">Luxury Clothing</span>
+              <span class="small-font">
+                Get the best what suits what suits what suits what suits you
+              </span>
+              <a href="">Browse</a>
+            </div>
+          </div>
+        </div>
 
-      <div class="trending-products-section">
-        <h2>Trending Products</h2>
-        <div>
-          <div class="product">
-            <div class="product-image-container"></div>
-            <div class="product-info-container">
-              <span class="product-name">Name</span>
-              <span class="product-price">Price</span>
-            </div>
-          </div>
-          <div class="product">
-            <div class="product-image-container"></div>
-            <div class="product-info-container">
-              <span class="product-name">Name</span>
-              <span class="product-price">Price</span>
-            </div>
-          </div>
-          <div class="product">
-            <div class="product-image-container"></div>
-            <div class="product-info-container">
-              <span class="product-name">Name</span>
-              <span class="product-price">Price</span>
-            </div>
-          </div>
-          <div class="product">
-            <div class="product-image-container"></div>
-            <div class="product-info-container">
-              <span class="product-name">Name</span>
-              <span class="product-price">Price</span>
+        <div class="homepage-slide">
+          <div class="slider-content">
+            <div class="content-wrapper">
+              <span class="large-font karlo-font">Fine Materials</span>
+              <span class="small-font">
+                Scandinavian style slippers designed in Sweden and manufactured
+                in Portugal. All of our slippers are handmade.
+              </span>
+              <a href="">Browse</a>
             </div>
           </div>
         </div>
       </div>
+
+      <div class="featured-products-container section-top-margin">
+        <span class="section-header">Featured Products</span>
+        <div class="featured-products-wrapper">
+          <div class="featured-product">
+            <img src="images/products/1/1-1.jpg" alt="" />
+
+            <div class="featured-product-info">
+              <span class="featured-product-name">Levis Red Logo T-shirt</span>
+              <span class="featured-product-price">$23.99</span>
+              <div class="featured-product-links">
+                <a class="fa fa-eye" href="./pages/product/product.html"></a>
+                <a class="fa fa-shopping-cart" href=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="featured-product">
+            <img src="images/products/2/2-1.jpg" alt="" />
+
+            <div class="featured-product-info">
+              <span class="featured-product-name">Levis Red Logo T-shirt</span>
+              <span class="featured-product-price">$23.99</span>
+              <div class="featured-product-links">
+                <a class="fa fa-eye" href=""></a>
+                <a class="fa fa-shopping-cart" href=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="featured-product">
+            <img src="images/products/3/3-1.jpg" alt="" />
+
+            <div class="featured-product-info">
+              <span class="featured-product-name">Levis Red Logo T-shirt</span>
+              <span class="featured-product-price">$23.99</span>
+              <div class="featured-product-links">
+                <a class="fa fa-eye" href=""></a>
+                <a class="fa fa-shopping-cart" href=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="featured-product">
+            <img src="images/products/4/4-1.jpg" alt="" />
+
+            <div class="featured-product-info">
+              <span class="featured-product-name">Levis Red Logo T-shirt</span>
+              <span class="featured-product-price">$23.99</span>
+              <div class="featured-product-links">
+                <a class="fa fa-eye" href=""></a>
+                <a class="fa fa-shopping-cart" href=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="our-blog-container section-top-margin">
+        <span class="section-header">Our Blog</span>
+        <div class="our-blog-items-wrapper">
+          <div class="our-blog-item">
+            <div class="our-blog-item-image-wrapper"></div>
+            <div class="our-blog-item-info-wrapper">
+              <div class="our-blog-item-title">Our Blog Title</div>
+              <div class="our-blog-item-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                repudiandae perferendis dolor molestias providentLorem ipsum
+              </div>
+              <a href="">Read more...</a>
+            </div>
+          </div>
+          <div class="our-blog-item">
+            <div class="our-blog-item-image-wrapper"></div>
+            <div class="our-blog-item-info-wrapper">
+              <div class="our-blog-item-title">Our Blog Title</div>
+              <div class="our-blog-item-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                repudiandae perferendis dolor molestias providentLorem ipsum
+              </div>
+              <a href="">Read more...</a>
+            </div>
+          </div>
+          <div class="our-blog-item">
+            <div class="our-blog-item-image-wrapper"></div>
+            <div class="our-blog-item-info-wrapper">
+              <div class="our-blog-item-title">Our Blog Title</div>
+              <div class="our-blog-item-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                repudiandae perferendis dolor molestias providentLorem ipsum
+              </div>
+              <a href="">Read more...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="our-collections-container section-top-margin">
+        <span class="section-header">Our Collections</span>
+        <div class="our-collections-items-wrapper">
+          <div class="our-collections-item">
+            <div
+              class="our-collection-item-image-wrapper"
+              style="
+                background-image: url('./images/homepage-collection-images/homepage-collection-1.jpg');
+              "
+            ></div>
+            <div class="our-collection-item-info">
+              <div class="our-collection-item-info-wrapper">
+                <div class="our-collection-item-info-header">Dresses</div>
+                <div class="our-collection-item-info-content">
+                  Whether you're looking for a luxurious leather tote, a
+                  retro-inspired backpack, or a simple zip-pouch, you've come to
+                  the right place.
+                </div>
+                <div class="our-collection-item-info-shopnow">Shop now ></div>
+              </div>
+            </div>
+          </div>
+          <div class="our-collections-item">
+            <div
+              class="our-collection-item-image-wrapper"
+              style="
+                background-image: url('./images/homepage-collection-images/homepage-collection-2.jpg');
+              "
+            ></div>
+            <div class="our-collection-item-info">
+              <div class="our-collection-item-info-wrapper">
+                <div class="our-collection-item-info-header">Jeans</div>
+                <div class="our-collection-item-info-content">
+                  Whether you're looking for a luxurious leather tote, a
+                  retro-inspired backpack, or a simple zip-pouch, you've come to
+                  the right place.
+                </div>
+                <div class="our-collection-item-info-shopnow">Shop now ></div>
+              </div>
+            </div>
+          </div>
+          <div class="our-collections-item">
+            <div
+              class="our-collection-item-image-wrapper"
+              style="
+                background-image: url('./images/homepage-collection-images/homepage-collection-3.jpg');
+              "
+            ></div>
+            <div class="our-collection-item-info">
+              <div class="our-collection-item-info-wrapper">
+                <div class="our-collection-item-info-header">Tops</div>
+                <div class="our-collection-item-info-content">
+                  Whether you're looking for a luxurious leather tote, a
+                  retro-inspired backpack, or a simple zip-pouch, you've come to
+                  the right place.
+                </div>
+                <div class="our-collection-item-info-shopnow">Shop now ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="
+          single-product-section
+          section-top-margin section-border-top section-border-bottom
+        "
+      >
+        <div class="product-page-image-and-info-wrapper">
+          <div>
+            <div class="product-images-wrapper">
+              <img src="../../images/products/1/1-1.jpg" alt="" />
+
+              <img src="../../images/products/1/1-2.jpg" alt="" />
+
+              <img src="../../images/products/1/1-3.jpg" alt="" />
+
+              <img src="../../images/products/1/1-4.jpg" alt="" />
+            </div>
+            <div class="product-info-section">
+              <div>
+                <h3 class="product-name">Levis Red Logo T-shirt</h3>
+                <h5 class="product-price">$23.99</h5>
+                <span class="tax-included">Tax Included</span>
+                <span class="product-description">
+                  The perfect balance of whimsical and wearable – the feminine
+                  Edie Cascade Wrap Mini Dress is one of our most versatile
+                  styles. Perfect for easy mornings but with enough details to
+                  dress up for special dates, this hardworking wrap is one to
+                  rely on.
+                </span>
+                <div class="product-quantity-container">
+                  <button class="minus">-</button>
+                  <input class="quantity-input" value="0" />
+                  <button class="plus">+</button>
+                </div>
+                <div class="variants-container">
+                  <div class="size-variant">
+                    <label for="" class="size-variant-label">Size:</label>
+                    <form action="">
+                      <input type="button" value="small" />
+                      <input type="button" value="medium" />
+                      <input type="button" value="large" />
+                    </form>
+                  </div>
+                </div>
+                <div class="button-container">
+                  <a href="" class="add-to-cart-btn">ADD TO CART</a>
+                  <a href="" class="buy-it-now-btn">BUY IT NOW</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sale-section section-top-margin section-border-bottom">
+        <div class="sale-section-wrapper">
+          <div class="sale-box-container">
+            <div class="sale-box-content-wrapper">
+              <span class="sale-box-header">End of Season Sale</span>
+              <span class="sale-box-content small-font">
+                Take 25% Discount at all products on order above 100$
+              </span>
+              <button class="sale-box-btn">BROWSE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="parallax-section section-top-margin">
+        <div class="parallax-content-container">
+          <div class="parallax-content-wrapper">
+            <span class="large-font">Get the Best</span>
+            <span class="small-font">
+              Here you get the best bvslo for toyi ofeo reop rej ekofj Here you
+              get the best bvslo for toyi ofeo reop rej ekofj Here you get the
+              best bvslo for toyi ofeo reop rej ekofj
+            </span>
+            <a href="">Shop</a>
+          </div>
+        </div>
+      </div>
+      <div class="new-collection-section section-top-margin">
+        <div class="collection-section-wrapper">
+          <span class="section-header">Shop Our Collection</span>
+          <div class="rows-wrapper">
+            <div class="top-row">
+              <div
+                class="collection-item"
+                style="background-image: url('./images/products/2/2-1.')"
+              >
+                <span>Tops</span>
+                <a href="./pages/product/product.html"></a>
+              </div>
+              <div
+                class="collection-item"
+                style="background-image: url('./images/products/2/2-1.')"
+              >
+                <span>Dresses</span>
+                <a href="./pages/product/product.html"></a>
+              </div>
+            </div>
+            <div class="bottom-row">
+              <div
+                class="collection-item"
+                style="background-image: url('./images/products/2/2-1.')"
+              >
+                <span>Maxis</span>
+                <a href="./pages/product/product.html"></a>
+              </div>
+              <div
+                class="collection-item"
+                style="background-image: url('./images/products/2/2-1.')"
+              >
+                <span>Lorem</span>
+                <a href="./pages/product/product.html"></a>
+              </div>
+              <div
+                class="collection-item"
+                style="background-image: url('./images/products/2/2-1.')"
+              >
+                <span>Ipsum</span>
+                <a href="./pages/product/product.html"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer-section section-top-margin">
+        <div class="top-footer-section">
+          <div class="links-footer-section-1 links-footer-section">
+            <span class="links-footer-section-header">Shop By Category</span>
+            <div class="links-in-footer">
+              <span>All</span>
+              <span>Men's</span>
+              <span>Women's</span>
+              <span>Seasonal</span>
+            </div>
+          </div>
+          <div class="links-footer-section-2 links-footer-section">
+            <span class="links-footer-section-header">About</span>
+            <div class="links-in-footer">
+              <span>Contact</span>
+              <span>FAQ</span>
+              <span>Blog</span>
+              <span>About Us</span>
+            </div>
+          </div>
+          <div class="newsletter-footer-section">
+            <div>Newsletter</div>
+            <span>
+              Subscribe to get notified about product launches, special offers
+              and company news.
+            </span>
+            <div class="input-section">
+              <input type="text" />
+              <button type="submit">Subscribe</button>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-footer-section"></div>
+      </footer>
+      <!-- HOMEPAGE CONTAINER -->
     </div>
+
     <script src="style/script.js"></script>
   </body>
 </html>

@@ -286,21 +286,24 @@ header {
   margin-bottom: 0.2rem;
   display: block;
 }
-.product-info-section div .variants-container .size-variant div {
+.product-info-section div .variants-container .size-variant form {
   width: 100%;
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
 }
-.product-info-section div .variants-container .size-variant div span {
+.product-info-section div .variants-container .size-variant form input {
+  width: calc(33.3333% - 10px);
+  padding: 0.4rem 0;
+  background-color: white;
+  outline: none;
   border: 1px solid black;
-  padding: 0.2rem;
-  display: inline-block;
-  width: 2rem;
-  text-align: center;
-  font-weight: 550;
-  transition: color 200ms, background-color 200ms;
+  font-size: 0.8rem;
 }
-.product-info-section div .variants-container .size-variant div span:hover {
-  color: white;
+.product-info-section div .variants-container .size-variant form input:hover {
+  transition: color 200ms, background-color 200zms;
   background-color: black;
+  color: white;
 }
 .product-info-section div .button-container {
   display: flex;
